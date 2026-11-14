@@ -1,6 +1,6 @@
 # QuadLoop privacy policy
 
-Version 1, 27 October 2026
+Version 2, 12 November 2026
 
 QuadLoop is made by Wavenstein, a sole proprietorship registered with the Dutch
 Chamber of Commerce (KvK) under number 42170664, the Netherlands. This policy
@@ -9,9 +9,11 @@ covers QuadLoop on iPad (the app and its AUv3 plug-in) and on macOS and Windows
 
 ## The short version
 
-QuadLoop collects no personal data. It has no accounts, no analytics, no
-advertising and no tracking, and it sends nothing about you or what you play to
-Wavenstein or anyone else.
+QuadLoop collects no personal data. It has no accounts, no advertising and no
+tracking, and it sends nothing about you or what you play to Wavenstein or
+anyone else. On macOS and Windows it counts how often it is used (which
+version, as which kind of plug-in, in which DAW, on which system), with nothing
+in the count that identifies you or your computer. You can switch that off.
 
 ## Your audio
 
@@ -29,12 +31,28 @@ plug-in. Deleting QuadLoop, or the project, deletes them.
 
 ## Network connections
 
-- **On iPad**, QuadLoop makes no network connections.
+- **On iPad**, QuadLoop makes no connections over the internet.
 - **On macOS and Windows**, QuadLoop asks GitHub once a day whether a newer
   version has been published, so it can tell you. The request carries nothing
   about you or your use of QuadLoop, but like any visit to a website it reaches
   GitHub from your internet address, which GitHub handles under its own privacy
   statement. You can switch the check off in Settings, under SETUP.
+- **On macOS and Windows**, each time QuadLoop is used (its window opened,
+  or audio played through it for half a minute), it tells Wavenstein which
+  version it is, whether it is the app or which kind of plug-in (VST3, AU,
+  CLAP), the name of the DAW it runs in, the name and version of the operating
+  system, and the kind of processor. Nothing else is sent: no name, no
+  identifier for you or your computer, nothing about what you play. Wavenstein
+  keeps only a count of these per day; the internet address the request came
+  from is not stored or logged. The counts are kept by Cloudflare, which runs
+  the service that receives them, under its own privacy statement. You can
+  switch them off in Settings, under SETUP (Usage counts).
+- **Ableton Link**, in the standalone on macOS, Windows and iPad, is off until
+  you switch it on. While it is on, QuadLoop finds other Link-enabled apps on
+  your local network and shares the tempo, the beat and whether it is playing
+  with them. Nothing else is sent, and none of it leaves your network. On iPad
+  and on macOS 15 and later, the system asks you first whether QuadLoop may use
+  the local network.
 
 ## Beta testing through TestFlight
 
